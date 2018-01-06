@@ -11,7 +11,12 @@ The only requirement is that the installation media be inserted in the DVD drive
 Role Variables
 --------------
 
-The role is very simple and short, you can edit the tasks file directly.
+Below are the variables that can be customized along with their default values.
+
+local_repo_mount: /mnt/dvd
+local_repo_id: DVD
+local_repo_name: local repo
+local_repo_enabled: 1
 
 Dependencies
 ------------
