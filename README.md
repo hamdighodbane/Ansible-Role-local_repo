@@ -13,10 +13,10 @@ Role Variables
 
 Below are the variables that can be customized along with their default values.
 
-local_repo_mount: /mnt/dvd
-local_repo_id: DVD
-local_repo_name: local repo
-local_repo_enabled: 1
+- local_repo_mount: /mnt/dvd
+- local_repo_id: DVD
+- local_repo_name: local repo
+- local_repo_enabled: 1
 
 Dependencies
 ------------
