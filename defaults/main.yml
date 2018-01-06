@@ -1,2 +1,7 @@
 ---
 # defaults file for local_repo
+
+local_repo_mount: /mnt/dvd
+local_repo_id: DVD
+local_repo_name: local repo
+local_repo_enabled: 1

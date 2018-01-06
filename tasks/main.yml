@@ -2,19 +2,19 @@
 # tasks file for local_repo
 
 - name: Copy repo config file
-  copy:
-    src: dvd.repo
+  template:
+    src: dvd.repo.j2
     dest: /etc/yum.repos.d/dvd.repo
 
 - name: Create Mount point
   file:
-    path: /mnt/dvd
+    path: "{{ local_repo_mount }}"
     state: directory
     mode: 0755
 
 - name: Mount DVD read-only
   mount:
-    path: /mnt/dvd
+    path: "{{ local_repo_mount }}"
     src: /dev/sr0
     fstype: iso9660
     opts: ro
